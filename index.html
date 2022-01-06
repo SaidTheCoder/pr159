@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comic books</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+        <script src="js/Read.js"></script>
+    </head>
+    <body>
+        <a-scene id="main-scene">
+            <a-sky id="main-container" color="skyblue"></a-sky>
+            <a-entity id="places-container" tour></a-entity>
+            <a-camera id="camera" wasd-controls="enabled:false">
+                <a-entity id="app-title" position="0 0.7 -1" text="font:exo2bold;align:center;width:2.5;color:white;value:comic books!!">
+                    <a-entity id="app-subtitle" position="0 -0.1 0" text="font:dejavu;align:center;width:1;color:green;value:read them">
+                    </a-entity>
+                </a-entity>
+            </a-camera>
+        </a-scene>
+    </body>
+</html>
